@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.font-tangerine { font-family: 'Tangerine', serif; font-size: 38px; font-style: italic;}
+.font-dancing-script { font-family: 'Dancing Script', serif; font-size: 30px; font-style: italic;}
+.font-shadows-into-light { font-family: 'Shadows Into Light', serif; font-size: 30px; font-style: italic;}
+.font-caveat { font-family: 'Caveat', serif; font-size: 30px; font-style: italic;}
+.font-homemade-apple { font-family: 'Homemade Apple', serif; font-size: 18px; font-style: italic;}
+.font-qwitcher-grypen { font-family: 'Qwitcher Grypen', serif; font-size: 40px; font-style: italic;}
+.font-herr-von-muellerhoff { font-family: 'Herr Von Muellerhoff', serif; font-size: 40px; font-style: italic;}
+.font-mrs-saint-delafield { font-family: 'Mrs Saint Delafield', serif; font-size: 40px; font-style: italic;}
+.font-mr-de-haviland { font-family: 'Mr De Haviland', serif; font-size: 40px; font-style: italic;}

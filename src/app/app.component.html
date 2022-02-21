@@ -350,6 +350,47 @@
 
   </div>
 
+<form (ngSubmit)="onSubmit()">
+  <p>
+    <input type="text" name="assinatura" [(ngModel)]="assinatura" title="Assinatura" alt="Assinatura" placeholder="Assine aqui..." autocapitalize="none">
+  </p>
+  <p>Digite sua assinatura aqui</p>
+
+  <br/>
+  <br/>
+
+  <table>
+    <tr *ngFor="let radio of radios">
+      <td><input type="radio" [(ngModel)]="fontSelecionada" [name]="radio.value" [value]="radio.value" required></td>
+      <td><div [id]="radio.value"><span [id]="radio.value" [class]="radio.value">{{ assinatura }}</span></div></td>
+    </tr>
+  </table>
+
+  <br/>
+  <br/>
+
+  <button type="submit" [disabled]="assinatura === '' || fontSelecionada === ''">Confirmar assinatura</button>
+  <!-- <button type="button" (click)="generateImage()" [disabled]="assinatura === '' || fontSelecionada === ''">Imagem</button> -->
+
+  <br/>
+  <br/>
+
+  Sua assinatura: {{resultado}} <br/>
+  Fonte escolhida: {{resultadoFonte}}
+
+  <br/>
+  <br/>
+  <label *ngIf="error" style="color: red; font-weight: 600;">Error: {{ error }}</label>
+
+  <div *ngIf="imagem !== ''">
+    <img [src]="imagem" alt="Assinatura selecionada" />
+  </div>
+
+</form>
+
+<br/>
+  <br/>
+
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
